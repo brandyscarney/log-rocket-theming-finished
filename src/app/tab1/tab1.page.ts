@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  constructor(public alertController: AlertController) {}
 
-  constructor() {}
-
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Use this lightsaber?',
+      message: 'Do you agree to use this lightsaber to do good across the galaxy?',
+      buttons: ['Disagree', 'Agree']
+    });
+    await alert.present();
+  }
 }

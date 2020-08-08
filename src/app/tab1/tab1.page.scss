@@ -1,0 +1,17 @@
+ion-card .header-img {
+  width: 100%;
+  height: 120px;
+}
+
+ion-card ion-list ion-item {
+  --padding-start: 0;
+}
+
+/* Apps Card */
+.apps-card ion-list ion-thumbnail {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  --border-radius: 14px;
+}
+
