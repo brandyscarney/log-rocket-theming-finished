@@ -13,7 +13,8 @@ export class Tab1Page {
     const alert = await this.alertController.create({
       header: 'Use this lightsaber?',
       message: 'Do you agree to use this lightsaber to do good across the galaxy?',
-      buttons: ['Disagree', 'Agree']
+      buttons: ['Disagree', 'Agree'],
+      cssClass: 'themed-alert'
     });
     await alert.present();
   }
