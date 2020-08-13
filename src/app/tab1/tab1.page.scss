@@ -15,3 +15,7 @@ ion-card ion-list ion-item {
   --border-radius: 14px;
 }
 
+:host {
+  --ion-item-background: var(--ion-card-background);
+}
+
